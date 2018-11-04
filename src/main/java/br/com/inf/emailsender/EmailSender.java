@@ -1,5 +1,7 @@
 package br.com.inf.emailsender;
 
+import br.com.inf.emailsender.aplicacao.FuncionalidadesEmailSender;
+
 /**
  * @author gabriel
  * @author joao henrique
@@ -8,6 +10,6 @@ package br.com.inf.emailsender;
 public class EmailSender {
 
     public static void main(String args[]) {
-        System.out.println("JAVA FUNCIONANDO OK!");
+        FuncionalidadesEmailSender.emailSenderMenu();
     }
 }

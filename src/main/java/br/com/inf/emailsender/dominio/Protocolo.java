@@ -94,7 +94,7 @@ public final class Protocolo {
         String novoHashBase64 = Base64.getEncoder().encodeToString(sha256.digest());
 
         if (!hashBase64.equals(novoHashBase64)) {
-            throw new RuntimeException("Mensagem com conteúdo alterado durante o envio da mensagem!");
+            throw new ErroEmailSender("Mensagem com conteúdo alterado durante o envio da mensagem!");
         }
         return mensagem;
     }
