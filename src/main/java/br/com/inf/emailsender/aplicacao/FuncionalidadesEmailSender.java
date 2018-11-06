@@ -44,7 +44,7 @@ public class FuncionalidadesEmailSender {
         if (caminho.isEmpty()) {
             throw new ErroEmailSender("Por favor entre com o caminho do arquivo.");
         }
-        if (new File(caminho).exists()) {
+        if (!new File(caminho).exists()) {
             throw new ErroEmailSender("Arquivo não encontrado, entre com um caminho válido");
         }
         return caminho;
